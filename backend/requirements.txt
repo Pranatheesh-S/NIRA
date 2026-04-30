@@ -1,0 +1,21 @@
+flask==3.1.0
+flask-cors==5.0.0
+firebase-admin==6.6.0
+python-dotenv==1.0.1
+requests==2.32.3
+easyocr==1.7.2
+Pillow==12.2.0
+numpy==1.26.4
+--extra-index-url https://download.pytorch.org/whl/cpu
+torch==2.3.0+cpu
+torchvision==0.18.0+cpu
+
+# Whisper STT — requires ffmpeg on system PATH (https://ffmpeg.org/download.html)
+openai-whisper==20231117
+
+# Neo4j driver — optional; used only if NEO4J_URI env var is set
+neo4j==5.19.0
+
+# Question generation — document text extraction
+pymupdf==1.24.5        # PDF extraction (import as fitz)
+python-docx==1.1.2     # DOCX extraction

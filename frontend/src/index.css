@@ -1,0 +1,52 @@
+@import "tailwindcss";
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+#root {
+  min-height: 100vh;
+}
+
+@keyframes fadeInUp {
+  from { opacity: 0; transform: translateY(14px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes popIn {
+  0%   { opacity: 0; transform: scale(0.88); }
+  65%  { transform: scale(1.03); }
+  100% { opacity: 1; transform: scale(1); }
+}
+
+@keyframes slideInLeft {
+  from { opacity: 0; transform: translateX(-16px); }
+  to   { opacity: 1; transform: translateX(0); }
+}
+
+@keyframes barGrow {
+  from { width: 0 !important; }
+}
+
+@keyframes pulse-ring {
+  0%   { transform: scale(1); opacity: 0.6; }
+  100% { transform: scale(1.5); opacity: 0; }
+}
+
+.animate-fade-in-up  { animation: fadeInUp 0.4s ease-out both; }
+.animate-pop-in      { animation: popIn 0.45s cubic-bezier(.34,1.56,.64,1) both; }
+.animate-slide-left  { animation: slideInLeft 0.35s ease-out both; }
+.bar-animate         { animation: barGrow 0.8s ease-out both; }
+
+.stagger-1 { animation-delay: 0.05s; }
+.stagger-2 { animation-delay: 0.10s; }
+.stagger-3 { animation-delay: 0.15s; }
+.stagger-4 { animation-delay: 0.20s; }
+.stagger-5 { animation-delay: 0.25s; }
+.stagger-6 { animation-delay: 0.30s; }

@@ -1,0 +1,28 @@
+# Dependencies
+node_modules/
+
+# Python
+venv/
+__pycache__/
+*.pyc
+*.pyo
+
+# Environment
+.env
+.env.local
+.env.*.local
+
+# Firebase
+serviceAccount.json
+
+# Logs
+*.log
+npm-debug.log*
+
+# Build output
+dist/
+build/
+
+# IDE
+.vscode/
+.idea/
